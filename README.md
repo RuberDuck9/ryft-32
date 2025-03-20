@@ -29,4 +29,6 @@ CPY [00010] : copy the value from the register address specified in argument 1 t
 ADD [00011] : add the value held at the register address specified in argument 1 and the value held at the register address specified in argument 2, and store it at the register address specified in argument 3    
 AD1 [00100] : add the value specified in argument 1 and the value held at the register address specified in argument 2, and store it at the register address specified in argument 3    
 AD2 [00101] : add the value held at the register address specified in argument 1 and the value specified in argument 2, and store it at the register address specified in argument 3    
-CKJ [00111] : check if adding the values held at the addresses specified in arguments 1 and 2 would have a carry, if so, set the instruction pointer to the value typed in argument 3   
+CKJ [00111] : check if adding the values held at the addresses specified in arguments 1 and 2 would have a carry, if so, set the instruction pointer to the value typed in argument 3     
+SUB [01000] : subtract the value held at the register address specified in argument 2 from the value held at the register address specified in argument 1, and store it at the register address specified in argument 3    
+MLT [01001] : multiply the value held at the register address specified in argument 1 and the value held at the register address specified in argument 2, and store it at the register address specified in argument 3    
