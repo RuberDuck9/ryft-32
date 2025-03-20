@@ -13,7 +13,7 @@ Arguments are used as a way of subdividing the bus to make more complex instruct
        
 ## Components     
       
-Instruction Pointer: increases by one each tick unless modified by an instruction, controls read address of    
+Instruction Pointer: increases by one each tick unless modified by an instruction, controls read address of the instruction register   
 Instruction Register: stored instructions for the cpu to carry out once turned on, stores data as binary hex values, reads from address specified by instruction pointer     
 Instruction Decoder: reads the opcode bits (0-4) from the instruction register and determines which instruction to execute    
 Registers: hold temporary values that the cpu needs in the very short term      
