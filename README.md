@@ -18,7 +18,8 @@ Instruction Register: stored instructions for the cpu to carry out once turned o
 Instruction Decoder: reads the opcode bits (0-4) from the instruction register and determines which instruction to execute    
 Registers: hold temporary values that the cpu needs in the very short term      
 RAM: holds more long-term data for the cpu      
-The Stack: stores data sequentially for the cpu, cannot be accessed out of outer         
+The Stack: stores data sequentially for the cpu, cannot be accessed out of outer           
+ALU: performs all math operations for the cpu, operation to be performed is controlled by the instruction decoder     
 
 ## Instructions    
 
