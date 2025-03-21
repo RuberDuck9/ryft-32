@@ -1,5 +1,5 @@
 # ryft-32   
-A fully custom 32 bit cpu - also built on a custom architecture - capable of complex instructions throught the cisc architecture design model.     
+A fully custom 32 bit cpu - also built on a custom architecture - capable of complex instructions through  the cisc architecture design model.     
 
 # CISC Architecture Style:     
 
@@ -13,7 +13,7 @@ Arguments are used as a way of subdividing the bus to make more complex instruct
        
 ## Components     
 
-- System Clock: toggles between an on and off state at a given rate, which others components use to synchronize themselves    
+- System Clock: toggles between an on and off state at a given rate, which other components use to synchronize themselves    
 - Instruction Pointer: increases by one each clock cycle unless modified by an instruction, controls read address of the instruction register   
 - Instruction Register: stored instructions for the cpu to carry out once turned on, stores data as binary hex values, reads from address specified by instruction pointer    
 - Instruction Decoder: reads the opcode bits (0-4) from the instruction register and determines which instruction to execute    
@@ -30,7 +30,7 @@ Arguments are used as a way of subdividing the bus to make more complex instruct
 - ADD [00011] : add the value held at the register address specified in argument 1 and the value held at the register address specified in argument 2, and store it at the register address specified in argument 3    
 - AD1 [00100] : add the value specified in argument 1 and the value held at the register address specified in argument 2, and store it at the register address specified in argument 3    
 - AD2 [00101] : add the value held at the register address specified in argument 1 and the value specified in argument 2, and store it at the register address specified in argument 3    
-- CKJ [00111] : check if adding the values held at the addresses specified in arguments 1 and 2 would have a carry, if so, set the instruction pointer to the value typed in argument 3     
+- CKJ [00111] : check if adding the values held at the register addresses specified in arguments 2 and 3 would have a carry, if so, set the instruction pointer to the value typed in argument 1        
 - SUB [01000] : subtract the value held at the register address specified in argument 2 from the value held at the register address specified in argument 1, and store it at the register address specified in argument 3      
 - MLT [01001] : multiply the value held at the register address specified in argument 1 and the value held at the register address specified in argument 2, and store it at the register address specified in argument 3      
 - AND [01010] : and each bit of the values held at the addresses specified in arguments 1 and 2 and save it to the address specified in argument 3   
@@ -52,4 +52,4 @@ Arguments are used as a way of subdividing the bus to make more complex instruct
 
 ## Registers
 
-Due to the bit size of argument 3 - which is used primarily for specifying register address - there are 2^5 possible register addresses. This shouldn't be a problem for most reasonable programs, since the amount of ram is much more generous. Register addresses are numbered 0 to 31, HOWEVER, register 0 has no write access and is always a permant 0.
+Due to the bit size of argument 3 - which is used primarily for specifying register address - there are 2^5 possible register addresses. This shouldn't be a problem for most reasonable programs, since the amount of ram is much more generous. Register addresses are numbered 0 to 31, HOWEVER, register 0 has no write access and is always a permanent 0.
