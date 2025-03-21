@@ -48,4 +48,8 @@ Arguments are used as a way of subdividing the bus to make more complex instruct
 - LES [10101] : compare the values stored at the addresses specified by arguments 1 and 2, if the value held at the address specified argument 1 is less than that of argument 2, set the instruction pointer value to the one specified in argument 3      
 - CAL [10110] : push the current instruction pointer value + 4 to the stack (to prevent infinite loops) and then jump to the address specified in argument 1, the values of argument 2 and 3 value are ignored for this     
 - RET [10111] : pop the top value off the stack and set the instruction pointer equal to that value, all argument values are ignored for this   
-- HLT [11111] : stop the system clock, all other arguments are null for this instruction     
+- HLT [11111] : stop the system clock, all other arguments are null for this instruction
+
+## Registers
+
+Due to the bit size of argument 3 - which is used primarily for specifying register address - there are 2^5 possible register addresses. This shouldn't be a problem for most reasonable programs, since the amount of ram is much more generous. Register addresses are numbered 0 to 31, HOWEVER, register 0 has no write access and is always a permant 0.
