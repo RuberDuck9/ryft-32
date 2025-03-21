@@ -26,7 +26,7 @@ Arguments are used as a way of subdividing the bus to make more complex instruct
 
 - NOP [00000] : no instruction    
 - IMM [00001] : store the value typed out across arguments 1 and 2 to the register address specified in argument 3     
-- CPY [00010] : copy the value from the register address specified in argument 1 to the register address specified in argument 2, argument 3's value is ignored for this    
+- CPY [00010] : copy the value from the register address specified in argument 1 to the register address specified in argument 3, argument 2's value is ignored for this    
 - ADD [00011] : add the value held at the register address specified in argument 1 and the value held at the register address specified in argument 2, and store it at the register address specified in argument 3    
 - AD1 [00100] : add the value specified in argument 1 and the value held at the register address specified in argument 2, and store it at the register address specified in argument 3    
 - AD2 [00101] : add the value held at the register address specified in argument 1 and the value specified in argument 2, and store it at the register address specified in argument 3    
