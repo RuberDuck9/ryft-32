@@ -31,8 +31,8 @@ Arguments are used as a way of subdividing the bus to make more complex instruct
 - AD1 [00100] : add the value specified in argument 1 and the value held at the register address specified in argument 2, and store it at the register address specified in argument 3    
 - AD2 [00101] : add the value held at the register address specified in argument 1 and the value specified in argument 2, and store it at the register address specified in argument 3    
 - CKJ [00111] : check if adding the values held at the register addresses specified in arguments 2 and 3 would have a carry, if so, set the instruction pointer to the value typed in argument 1        
-- SUB [01000] : subtract the value held at the register address specified in argument 2 from the value held at the register address specified in argument 1, and store it at the register address specified in argument 3      
-- MLT [01001] : multiply the value held at the register address specified in argument 1 and the value held at the register address specified in argument 2, and store it at the register address specified in argument 3      
+- SUB [01000] : subtract the value held at the register address specified in argument 2 from the value held at the register address specified in argument 1, and store it at the register address specified in argument 3    
+- MLT [01001] : multiply the value held at the register address specified in argument 1 and the value held at the register address specified in argument 2, and store it at the register address specified in argument 3     
 - AND [01010] : and each bit of the values held at the addresses specified in arguments 1 and 2 and save it to the address specified in argument 3   
 - ORR [01011] : or each bit of the values held at the addresses specified in arguments 1 and 2 and save it to the address specified in argument 3   
 - NOR [01100] : nor each bit of the values held at the addresses specified in arguments 1 and 2 and save it to the address specified in argument 3   
@@ -52,4 +52,4 @@ Arguments are used as a way of subdividing the bus to make more complex instruct
 
 ## Registers
 
-Due to the bit size of argument 3 - which is used primarily for specifying register address - there are 2^5 possible register addresses. This shouldn't be a problem for most reasonable programs, since the amount of ram is much more generous. Register addresses are numbered 0 to 31, HOWEVER, register 0 has no write access and is always a permanent 0.
+Due to the bit size of argument 3 - which is used primarily for specifying register address - there are 2^5 possible register addresses. Still, memory shouldn't be a problem for most reasonable programs, since the amount of ram is much more generous. Register addresses are numbered 0 to 31, HOWEVER, register 0 has no write access and is always a permanent 0.
