@@ -1,7 +1,5 @@
 # ryft-32   
-A fully custom 32 bit cpu - also built on a custom architecture - capable of complex instructions through  the cisc architecture design model.     
-
-# CISC Architecture Style:     
+A fully custom 32 bit cpu - also built on a custom architecture - capable of complex instructions through the cisc architecture design model.        
 
 ## Bit Allocation / Instruction Format   
    
